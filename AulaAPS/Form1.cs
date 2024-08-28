@@ -27,6 +27,12 @@ namespace AulaAPS
                 case "Triangulo":
                     SelecionarTriangulo();
                     break;
+                case "Retangulo":
+                    SelecionarRetangulo();
+                    break;
+                case "Circunferencia":
+                    SelecionarCirc();
+                    break;
                 default:
                     break;
             }
@@ -58,6 +64,18 @@ namespace AulaAPS
             lblAltura.Visible = txtAltura.Visible = visivel;
         }
 
+        private void SelecionarRetangulo()
+        {
+            ExibirBase(true);
+            ExibirAltura(true);
+            lblRaio.Visible = txtRaio.Visible = false;
+            cmbTriangulo.Visible = false;
+
+        }
+
+        private void SelecionarCirc()
+        { }
+
         private void btnCriar_Click(object sender, EventArgs e)
         {
             if (cmbForma.Text.Equals("Quadrado"))
@@ -67,6 +85,17 @@ namespace AulaAPS
                 };
                 cmbObjetos.Items.Add(quadrado);
             }
+            else if (cmbForma.Text.Equals("Retangulo"))
+            {
+                FormaGeometrica retangulo = new Retangulo()
+                {
+                    Base = Convert.ToDouble(txtBase.Text),
+                    Altura = Convert.ToDouble(txtAltura.Text)
+                };
+                cmbObjetos.Items.Add(retangulo);
+            }
+
+
         }
 
         private void cmbObjetos_SelectedIndexChanged(object sender, EventArgs e)
@@ -74,6 +103,11 @@ namespace AulaAPS
             FormaGeometrica obj = cmbObjetos.SelectedItem as FormaGeometrica;
             txtArea.Text = obj.CalcularArea().ToString();
             txtPerimetro.Text = obj.CalcularPerimetro().ToString();
+        }
+
+        private void txtArea_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

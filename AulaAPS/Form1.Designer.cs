@@ -92,6 +92,7 @@
             this.txtArea.ReadOnly = true;
             this.txtArea.Size = new System.Drawing.Size(100, 20);
             this.txtArea.TabIndex = 11;
+            this.txtArea.TextChanged += new System.EventHandler(this.txtArea_TextChanged);
             // 
             // lblArea
             // 
