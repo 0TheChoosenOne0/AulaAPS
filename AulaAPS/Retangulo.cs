@@ -2,30 +2,24 @@
 
 namespace AulaAPS
 {
-    internal class Retangulo : FormaGeometrica
+    public class Retangulo : FormaGeometrica
     {
-        private double _base;
-        public double Base
-        {
-            get { return _base; }
-            set { _base = value; }
-        }
+        public double Base { get; set; }
+        public double Altura { get; set; }
 
-        private double altura;
-
-        public double Altura
-        {
-            get { return altura; }
-            set { altura = value; }
-        }
         public override double CalcularArea()
         {
-            return (_base * altura);
+            return Base * Altura;
         }
 
         public override double CalcularPerimetro()
         {
-            return ((_base * 2) + (altura * 2));
+            return 2 * (Base + Altura);
+        }
+
+        public override string ToString()
+        {
+            return "Retângulo - Base: " + Base + ", Altura: " + Altura;
         }
     }
 }

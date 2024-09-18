@@ -2,28 +2,22 @@
 {
     public class Quadrado : FormaGeometrica
     {
-        private double lado;
+        public double Lado { get; set; }
 
-        public double Lado
-        {
-            get { return lado; }
-            set { lado = value; }
-        }
-        
         public override double CalcularArea()
         {
-            /*return lado * lado;*/
-            return System.Math.Pow(lado, 2);
+            return Lado * Lado;
         }
 
         public override double CalcularPerimetro()
         {
-            return lado * 4;
+            return 4 * Lado;
         }
 
         public override string ToString()
         {
-            return $"Quadrado ({lado})";
+            return "Quadrado - Lado: " + Lado;
         }
     }
 }
+ 

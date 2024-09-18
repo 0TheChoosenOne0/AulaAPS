@@ -1,0 +1,10 @@
+C:\Users\basse\Downloads\AulaAPS2024-master\AulaAPS2024-master\AulaAPS\bin\Debug\AulaAPS.exe.config
+C:\Users\basse\Downloads\AulaAPS2024-master\AulaAPS2024-master\AulaAPS\bin\Debug\AulaAPS.exe
+C:\Users\basse\Downloads\AulaAPS2024-master\AulaAPS2024-master\AulaAPS\bin\Debug\AulaAPS.pdb
+C:\Users\basse\Downloads\AulaAPS2024-master\AulaAPS2024-master\AulaAPS\obj\Debug\AulaAPS.csproj.AssemblyReference.cache
+C:\Users\basse\Downloads\AulaAPS2024-master\AulaAPS2024-master\AulaAPS\obj\Debug\AulaAPS.Form1.resources
+C:\Users\basse\Downloads\AulaAPS2024-master\AulaAPS2024-master\AulaAPS\obj\Debug\AulaAPS.Properties.Resources.resources
+C:\Users\basse\Downloads\AulaAPS2024-master\AulaAPS2024-master\AulaAPS\obj\Debug\AulaAPS.csproj.GenerateResource.cache
+C:\Users\basse\Downloads\AulaAPS2024-master\AulaAPS2024-master\AulaAPS\obj\Debug\AulaAPS.csproj.CoreCompileInputs.cache
+C:\Users\basse\Downloads\AulaAPS2024-master\AulaAPS2024-master\AulaAPS\obj\Debug\AulaAPS.exe
+C:\Users\basse\Downloads\AulaAPS2024-master\AulaAPS2024-master\AulaAPS\obj\Debug\AulaAPS.pdb

@@ -5,7 +5,7 @@ namespace AulaAPS
     public class TrianguloReto : Triangulo
     {
         private double _base;
-        public double Base
+        public new double Base
         {
             get { return _base; }
             set { _base = value; }
@@ -13,7 +13,7 @@ namespace AulaAPS
 
         private double altura;
 
-        public double Altura
+        public new double Altura
         {
             get { return altura; }
             set { altura = value; }
@@ -30,6 +30,10 @@ namespace AulaAPS
             double hipotenusa;
             hipotenusa = System.Math.Sqrt(Math.Pow(_base, 2) + Math.Pow(altura, 2));
             return (_base + altura + hipotenusa);
+        }
+        public override string ToString()
+        {
+            return "TriânguloReto - Base: " + Base + ", Altura: " + Altura;
         }
     }
 }
